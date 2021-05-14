@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from Worksbot-admin.themesease.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:44:16 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin Panel</title>
+        <link rel="icon" href="../static/img/favicon.png">
+
+        <!-- ========== COMMON STYLES ========== -->
+        <link rel="stylesheet" href="../static/dash/css/bootstrap.min.css" media="screen" >
+        <link rel="stylesheet" href="../static/dash/css/font-awesome.min.css" media="screen" >
+        <link rel="stylesheet" href="../static/dash/css/animate-css/animate.min.css" media="screen" >
+        <link rel="stylesheet" href="../static/dash/css/lobipanel/lobipanel.min.css" media="screen" >
+
+        <!-- ========== PAGE STYLES ========== -->
+        <link rel="stylesheet" href="../static/dash/css/prism/prism.css" media="screen" > <!-- USED FOR DEMO HELP - YOU CAN REMOVE IT -->
+        <link rel="stylesheet" href="../static/dash/css/toastr/toastr.min.css" media="screen" >
+        <link rel="stylesheet" href="../static/dash/css/icheck/skins/line/blue.css" >
+        <link rel="stylesheet" href="../static/dash/css/icheck/skins/line/red.css" >
+        <link rel="stylesheet" href="../static/dash/css/icheck/skins/line/green.css" >
+        <link rel="stylesheet" href="../static/dash/css/bootstrap-tour/bootstrap-tour.css" >
+        
+        <!-- ========== THEME CSS ========== -->
+        <link rel="stylesheet" href="../static/dash/css/main.css" media="screen" >
+
+        <!-- ========== MODERNIZR ========== -->
+        <script src="../static/dash/js/modernizr/modernizr.min.js"></script>
+    </head>
+    <body class="top-navbar-fixed">
+        <div class="main-wrapper">
+
+            <!-- ========== TOP NAVBAR ========== -->
+            <nav class="navbar top-navbar bg-white box-shadow">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="navbar-header no-padding">
+                			<a class="navbar-brand" href="index.html">
+                			    <img src="../static/img/logo.png" alt="Worksbot - Admin Template" class="logo">
+                			</a>
+                            <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
+                			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                				<span class="sr-only">Toggle navigation</span>
+                				<i class="fa fa-ellipsis-v"></i>
+                			</button>
+                            <button type="button" class="navbar-toggle mobile-nav-toggle" >
+                				<i class="fa fa-bars"></i>
+                			</button>
+                		</div>
+                        <!-- /.navbar-header -->
+
+                		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+                			<ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <li class="hidden-sm hidden-xs"><a href="#" class="user-info-handle"><i class="fa fa-user"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#" class="full-screen-handle"><i class="fa fa-arrows-alt"></i></a></li>
+                               
+                			</ul>
+                            <!-- /.nav navbar-nav -->
+
+                			<ul class="nav navbar-nav navbar-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                               
+                                <!-- /.dropdown -->
+                                <li><a href="#" class=""><i class="fa fa-bell"></i><span class="badge badge-danger">6</span></a></li>
+                				<li><a href="#" class=""><i class="fa fa-comments"></i><span class="badge badge-warning">2</span></a></li>
+                				<li class="dropdown tour-two">
+                					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe <span class="caret"></span></a>
+                					<ul class="dropdown-menu profile-dropdown">
+                						<li class="profile-menu bg-gray">
+                						    <div class="">
+                						        <img src="../static/dash/images/author.png" alt="John Doe" class="img-circle profile-img">
+                                                <div class="profile-name">
+                                                    <h6>John Doe</h6>
+                                                    <a href="#">View Profile</a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                						    </div>
+                						</li>
+                						<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                						<li><a href="#"><i class="fa fa-sliders"></i> Account Details</a></li>
+                						<li role="separator" class="divider"></li>
+                						<li><a href="../templates/admin/pages-login-3.html" class="color-danger text-center"><i class="fa fa-sign-out"></i> Logout</a></li>
+                					</ul>
+                				</li>
+                                <!-- /.dropdown -->
+                               
+                			</ul>
+                            <!-- /.nav navbar-nav navbar-right -->
+                		</div>
+                		<!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.row -->
+            	</div>
+            	<!-- /.container-fluid -->
+            </nav>
+
+            <!-- ========== WRAPPER FOR BOTH SIDEBARS & MAIN CONTENT ========== -->
+            <div class="content-wrapper">
+                <div class="content-container">
+
+                    <!-- ========== LEFT SIDEBAR ========== -->
+                    <div class="left-sidebar fixed-sidebar bg-black-300 box-shadow tour-three">
+                        <div class="sidebar-content">
+                            <div class="user-info closed">
+                                <img src="../static/dash/images/author.png" width="30%" alt="John Doe" class="img-circle profile-img">
+                                <h6 class="title">John Doe</h6>
+                            </div>
+                            <!-- /.user-info -->
+
+                            <div class="sidebar-nav">
+                                <ul class="side-nav color-gray">
+                                    
+                                        <li><a href="dashboard.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                                        
+                                   
+
+                                   
+                                  
+                                        
+                                
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-users"></i> <span>Customer</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="add-customer.html">   <i class="fa fa-user-plus"></i> <span>Add Customer</span></a></li>
+                                            <li><a href="manage-customer.html"> <i class="fa fa-users"></i> <span>Manage Customer</span></a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#" ><i class="fa fa-plus-square"></i><span>Medicine</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li ><a href="category.html"> <i class="fa fa-folder-o"></i><span>Category</span></a></li>
+                                           
+                                            <li><a href="add-medicine.html"><i class="fa fa-download"></i><span>Add Medicine</span></a></li>
+                                            <li><a href="manage-medicine.html"><i class="fa fa-folder-open"></i> <span>Manage Medicine</span></a></li>
+                                        
+                                        </ul>
+                                    </li>
+
+                                   
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-magic"></i> <span>Manufacturer</span><i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="add-manufacturer.html"><i class="fa fa-user-plus"></i> <span>Add Manufacturer</span></a></li>
+                                            <li><a href="manage-manufacturer.html"><i class="fa fa-users"></i> <span>Manage Manufacturer</span></a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-bars"></i> <span>Purchase</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="add-purchase.html"><i class="fa fa-bar-chart"></i> <span>Add Purchase</span></a></li>
+                                            <li><a href="manage-purchase.html"><i class="fa fa-bell-o"></i> <span>Manage Purchase</span></a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="has-children">
+                                        <a href="#"><i class="fa fa-truck"></i> <span>Stock</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="stock-report.html"><i class="fa fa-lock"></i> <span>Stock Report</span></a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span>Human Resource</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li class="has-children">
+                                            <a href="#"><i class="fa fa-barcode"></i> <span>HRM</span> <i class="fa fa-angle-right arrow"></i></a>
+                                                 <ul class="child-nav">
+                                           
+                                            <li><a href="add-employee.html"><i class="fa fa-line-chart"></i> <span>Add Employee</span></a></li>
+                                            <li><a href="manage-employee.html"><i class="fa fa-line-chart"></i> <span>Manage Employee</span></a></li>
+                                                 </ul>
+                                             </li>
+
+                                           
+                                           
+                                        </ul>
+                                    </li>
+                            
+                                    <li class="has-children">
+                                        <a href="#" class="active-a"><i class="fa fa-bar-chart-o"></i> <span>Supplier</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li class=""><a href="add-supplier.html"><i class="fa fa-check"></i> <span>Add Supplier</span></a></li>
+                                            <li class="active-b"><a href="manage-supplier.html"><i class="fa fa-thumb-tack"></i> <span>Manage Supplier</span></a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                   
+                                    
+                                </ul>
+                                <!-- /.side-nav -->
+                              
+                            </div>
+                            <!-- /.sidebar-nav -->
+                        </div>
+                        <!-- /.sidebar-content -->
+                    </div>
+                    <!-- /.left-sidebar -->
+
+                    <div class="main-page">
+                        <div class="container-fluid">
+                            <div class="row page-title-div">
+                                <div class="col-sm-6">
+                                    <h2 class="title"><i class="fa fa-list-alt" style="color:#3aafa9;"></i><span> Supplier</span></h2>
+                                    <p class="sub-title">Manage Supplier</p>
+                                </div>
+                                <!-- /.col-sm-6 -->
+                                <div class="col-sm right-side">
+                                    <div class="row breadcrumb-div">
+                                    <div class="col-sm">
+                                        <ul class="breadcrumb">
+                                            <li><a href="dashboard.html"><i class="fa fa-home"></i> Home</a></li>
+                                            <li >Supplier</li>
+                                            <li class="active-b"><strong>Manage Supplier</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- /.col-sm-6 text-right -->
+                            </div>
+                            <!-- /.row -->
+                         
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container-fluid -->
+
+                       
+                      
+                        <section class="section pt-10">
+                            <div class="container-fluid" style="margin: 20px;">
+                                <div class="row">
+                                    <a href="add-supplier.html"><button type="button" class="btn bg-success-700"><i class="fa fa-plus"></i>Add Supplier</button></a>
+                                    
+                                        <div class="panel border-primary no-border border-3-top" style="margin-top: 5px;">
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <h5>Manage Supplier</h5>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                
+                                                <table class="table table-striped table-bordered" style="margin-top: 5px;">
+                                                   
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">Supplier ID</th>
+                                                            <th class="text-center">Supplier Name</th>
+                                                            <th class="text-center">Address</th>
+                                                            <th class="text-center">Mobile</th> 
+                                                            <th class="text-center">Details</th>
+                                                            <th class="text-center">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td  class="text-center">OYUMYHAZTKWDDRKRZGK</td>
+                                                            <td  class="text-center">Justin</td>
+                                                            <td class="text-center">j-78,zacik colony</td>
+                                                            <td  class="text-center">8678524563</td>
+                                                            <td></td>
+                                                            <td  class="text-center"><button type="button" class="btn bg-primary-300" style="margin-right: 5px;"><i class="fa fa-pencil"></i></button><button type="button" class="btn bg-danger-600"><i class="fa fa-trash"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  class="text-center">ZYUMYUAZTKWDRRKZZIG</td>
+                                                            <td  class="text-center">Adword</td>
+                                                            <td class="text-center">K-74,zacik colony</td>
+                                                            <td  class="text-center">684754522</td>
+                                                            <td></td>
+                                                            <td  class="text-center"><button type="button" class="btn bg-primary-300" style="margin-right: 5px;"><i class="fa fa-pencil"></i></button><button type="button" class="btn bg-danger-600"><i class="fa fa-trash"></i></button></td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                               
+                                            
+                                               
+                                            </div>
+                                       
+                                        <!-- /.panel -->
+                                    </div>
+                                    <!-- /.col-md-6 -->
+
+                                   
+                                    <!-- /.col-md-6 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                        <!-- /.section -->
+                       
+                        
+                        <!-- /.section -->
+                    </div>
+                    <!-- /.main-page -->
+
+                   
+                    <!-- /.right-sidebar -->
+
+                </div>
+                <!-- /.content-container -->
+            </div>
+            <!-- /.content-wrapper -->
+
+        </div>
+        <!-- /.main-wrapper -->
+
+        <!-- ========== COMMON JS FILES ========== -->
+        <script src="../static/dash/js/jquery/jquery-2.2.4.min.js"></script>
+        <script src="../static/dash/js/jquery-ui/jquery-ui.min.js"></script>
+        <script src="../static/dash/js/bootstrap/bootstrap.min.js"></script>
+        <script src="../static/dash/js/pace/pace.min.js"></script>
+        <script src="../static/dash/js/lobipanel/lobipanel.min.js"></script>
+        <script src="../static/dash/js/iscroll/iscroll.js"></script>
+
+        <!-- ========== PAGE JS FILES ========== -->
+        <script src="../static/dash/js/prism/prism.js"></script>
+        <script src="../static/dash/js/amcharts/amcharts.js"></script>
+        <script src="../static/dash/js/amcharts/serial.js"></script>
+        <script src="../static/dash/js/amcharts/pie.js"></script>
+        <script src="../static/dash/js/amcharts/plugins/animate/animate.min.js"></script>
+        <script src="../static/dash/js/amcharts/plugins/export/export.min.js"></script>
+        <link rel="stylesheet" href="../static/dash/js/amcharts/plugins/export/export.css" type="text/css" media="all" />
+        <script src="../static/dash/js/amcharts/themes/light.js"></script>
+
+        <script src="../static/dash/js/prism/prism.js"></script>
+        <script src="../static/dash/js/waypoint/waypoints.min.js"></script>
+        <script src="../static/dash/js/counterUp/jquery.counterup.min.js"></script>
+        <script src="../static/dash/js/amcharts/amcharts.js"></script>
+        <script src="../static/dash/js/amcharts/serial.js"></script>
+        <script src="../static/dash/js/amcharts/plugins/export/export.min.js"></script>
+        <link rel="stylesheet" href="../static/dash/js/amcharts/plugins/export/export.css" type="text/css" media="all" />
+        <script src="../static/dash/js/amcharts/themes/light.js"></script>
+        <script src="../static/dash/js/toastr/toastr.min.js"></script>
+        <script src="../static/dash/js/icheck/icheck.min.js"></script>
+        <script src="../static/dash/js/bootstrap-tour/bootstrap-tour.js"></script>
+
+        <!-- ========== THEME JS ========== -->
+        <script src="../static/dash/js/main.js"></script>
+        <script src="../static/dash/js/production-chart.js"></script>
+        <script src="../static/dash/js/bar-chart.js"></script>
+        <script src="../static/dash/js/pie-chart.js"></script>
+        <script src="../static/dash/js/traffic-chart.js"></script>
+        <script src="../static/dash/js/task-list.js"></script>
+        <script>
+            $(function($) {
+                // chart1
+                var chart1 = AmCharts.makeChart( "chart1", {
+                  "type": "pie",
+                  "theme": "light",
+                  "fontFamily": "Poppins",
+                  "dataProvider": [ {
+                    "country": "Total Size",
+                    "litres": 2845.95
+                  }, {
+                    "country": "Total Purchase",
+                    "litres": 100
+                  },
+                  {
+                    "country": "Employee Salary",
+                    "litres": 500
+                  }, 
+                  {
+                    "country": "Service",
+                    "litres": 199
+                  }, {
+                    "country": "Total Expense",
+                    "litres": 50
+                  } ],
+                  "valueField": "litres",
+                  "titleField": "country",
+                   "balloon":{
+                   "fixedPosition":true
+                  },
+                  "export": {
+                    "enabled": true
+                  }
+                } );
+                var chart = AmCharts.makeChart("chart2", {
+          "type": "serial",
+          "theme": "light",
+          "fontFamily": "Poppins",
+          "marginRight": 70,
+          "dataProvider": [{
+            "country": "Medicine 1",
+            "visits": 20,
+            "color": "#FF0F00"
+          }, {
+            "country": "Medicine 2",
+            "visits": 10,
+            "color": "#FF6600"
+          }, {
+            "country": "Medicine 3",
+            "visits": 15,
+            "color": "#FF9E01"
+          }, {
+            "country": "Medicine 4",
+            "visits": 8,
+            "color": "#FCD202"
+          }],
+          "valueAxes": [{
+            "axisAlpha": 0,
+            "position": "left",
+            "title": "Sales as Quality"
+          }],
+          "startDuration": 1,
+          "graphs": [{
+            "balloonText": "[[category]]: [[value]]",
+            "fillColorsField": "color",
+            "fillAlphas": 0.9,
+            "lineAlpha": 0.2,
+            "type": "column",
+            "valueField": "visits"
+          }],
+          "chartCursor": {
+            "categoryBalloonEnabled": false,
+            "cursorAlpha": 0,
+            "zoomable": false
+          },
+          "categoryField": "country",
+          "categoryAxis": {
+            "gridPosition": "start",
+            "labelRotation": 45
+          },
+          "export": {
+            "enabled": true
+          }
+
+        });
+
+              
+               
+            });
+        </script>
+      
+
+        <!-- ========== ADD custom.js FILE BELOW WITH YOUR CHANGES ========== -->
+    </body>
+
+<!-- Mirrored from Worksbot-admin.themesease.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:45:17 GMT -->
+</html>
